@@ -32,11 +32,23 @@ class App extends Component  {
         } else {
             return (
                 <div className="tc">
-                    <h1 className="f1">RoboFriends</h1>
+                    <h1 className="f1">Style Me</h1>
                     <SearchBox searchChange={this.onSearchChange} />
+                    <div className="nav">
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Children</a></li>
+                        <li><a href="#">Couple</a></li>
+                        <li><a href="#">Aged</a></li>
+                    </div>
                     <Scroll>
                         <CardList robots={filteredRobots}/>
                     </Scroll>
+
+                    <footer>
+                        <li>&copy; <span id="logo">Style Me</span> { new Date().getFullYear()}</li>
+                        <li>Created by <a href="www.roncloud.com.ng">Roncloud Technologies &trade;</a></li>
+                    </footer>
                 </div>
             );   
         }

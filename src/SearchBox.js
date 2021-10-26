@@ -6,7 +6,7 @@ const SerarchBox = ({ searchfield, searchChange }) => {
             <input 
                 className="pa3 ba b--green bg-lightest-blue"
                 type="search" 
-                placeholder="Search Robots"
+                placeholder="Search for Styles"
                 onChange={searchChange}
             />
         </div>
